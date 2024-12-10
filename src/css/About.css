@@ -1,0 +1,30 @@
+
+.about-container {
+  margin-top: 100px; /* Adding top margin for spacing */
+}
+
+.about-image {
+  max-width: 80%; /* Set the image width to 80% of its container */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;  /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+}
+
+.about-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: smaller;  /* Adjusted font size to be more readable */
+  font-family: monospace;  /* Changed font to a more standard, readable type */
+}
+.about-title {
+  color: gray;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 7px;
+  margin: auto;
+  margin-bottom: 15px; /* Added extra space after the title */
+  font-size: 18px; /* Adjusted size for better readability */
+}

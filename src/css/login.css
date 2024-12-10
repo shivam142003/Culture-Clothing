@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.btn-color{
+    background-color: #0e1c36;
+    color: #fff;
+    
+  }
+  
+.profile-image-pic{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+   
+.cardbody-color{
+    background-color: #ebf2fa;
+}
+  
+a{
+    text-decoration: none;
+}
+.login  img{
+    max-width:'50%';
+    height: auto;
+    max-height:200px !important;
+}

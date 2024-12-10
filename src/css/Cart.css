@@ -1,0 +1,72 @@
+.cart-container {
+    margin-top:40px; 
+    padding: 20px; 
+   
+
+}
+
+.cart-summary {
+    background-color: #343a40; /* Dark background for summary */
+    color: white; /* White text in summary */
+    padding: 20px; /* Padding for summary */
+    border-radius: 10px; /* Rounded corners */
+  
+   
+  
+  
+}
+
+.summary-title {
+    font-size: 1.5rem; /* Title size in summary */
+    text-align: center; /* Center align title */
+}
+
+/* Button styles */
+.checkout-button {
+    /* background-color: rgb(134, 134, 134); */
+    background-color:#c5A992;
+    color: rgb(255, 249, 249); /* White text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width button */
+}
+
+.checkout-button:hover {
+    background-color: darkgray; /* Darker gray on hover */
+}
+
+.cart-title {
+    font-size: 2rem; /* Increase font size for the title */
+    font-weight: bold; /* Make title bold */
+    text-align: center; /* Center align the title */
+    margin: 20px 0; /* Add spacing around the title */
+
+}
+
+.line {
+    background-color: #000000; 
+    border: 1px solid black;
+    width: 90%; /* Set width of the line */
+    display: block; /* Ensure it takes full width */
+}
+.empty-cart-message {
+    text-align: center; /* Center align the message */
+    margin: 20px 0; /* Add some space above and below */
+    color: #666; /* Set a muted text color */
+}
+
+.empty-cart-icon {
+    width: 300px; /* Set a larger width for the icon */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto 10px; /* Center the icon and add space below */
+}
+.cart-text-center{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   
+}
+
+.optiom-value{
+    font-size: small;
+}

@@ -1,0 +1,926 @@
+/* Moving line at the top of the navbar */
+.moving-line {
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Height of the moving line */
+    background: linear-gradient(to right, #B8001F, #507687,#384B70,#795757,#3B3030,#FFF0D1);
+    background-size: 200%;
+    animation: slide 3s linear infinite;
+}
+body{
+  background-color:black !important;
+  margin-top:50px;
+}
+
+/* Animation for moving line */
+@keyframes slide {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* navbar */
+.navbar:hover{
+    color:black;
+
+}
+.nav-item{
+    font-size: larger;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-link{
+    /* color: black; */
+    /* color:#86C232 */
+    color:#ffff;
+}
+.nav-link:focus,
+.nav-link:active {
+  color: inherit; /* Removes blue color on focus */
+  outline: none; /* Removes outline on focus */
+  text-decoration: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; /* Removes any shadow that might appear */
+}
+
+.nav-link:hover{
+    text-decoration:line-through;
+    color:#fff;
+}
+
+/* section  carousel*/
+.container-fluid {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.dlfex {
+  background-color: #000000;
+}
+
+/* Newly Added cards effect */
+.hover-effect {
+  height: 250px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+}
+
+/*--------------------------------------------------------------*/
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+/* Full-screen section setup */
+.deepfakes-section {
+  height: 100vh;
+  background-color: #000; /* Black background */
+}
+
+/* Styling for the text content */
+.text-content {
+  padding: 4rem;
+  z-index: 2;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background to improve text readability */
+  text-align: left; /* Align text to the left */
+}
+
+/* Right column for the image */
+.image-column {
+  height: 100vh; /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center right; /* Position the image to the right */
+  position: relative;
+  opacity: 0.7;
+}
+
+.text-content h1 {
+  font-size: 50px; /* Adjust the size as per your needs */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+               -2px -2px 4px rgba(0, 0, 0, 0.8); /* Creating the 3D shadow effect */
+  transform: perspective(500px) translateZ(0px) scale(1.05);
+}
+
+/* Add hover effect for a slight animation */
+.text-content h1:hover {
+  transform: perspective(500px) translateZ(20px) scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive overlay to adjust for smaller screens */
+@media (max-width: 992px) {
+  .deepfakes-section .row {
+      flex-direction: column; /* Stack columns for smaller screens */
+  }
+
+  .image-column {
+      height: 50vh; /* Adjust the height for mobile */
+  }
+
+  .text-content {
+      padding: 2rem; /* Reduce padding on smaller screens */
+  }
+
+  .text-content h1 {
+      font-size: 36px; /* Decrease font size for smaller screens */
+      line-height: 1.2; /* Adjust line height for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h1 {
+      font-size: 28px; /* Further decrease for tablets */
+      line-height: 1.2; /* Maintain readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+      font-size: 24px; /* Smaller size for mobile */
+      line-height: 1.1; /* Adjust line height */
+  }
+
+  .text-content {
+      padding: 1rem; /* Further reduce padding for mobile */
+  }
+}
+
+/* Carousel buttons css */
+.button-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.button-container button.slick-arrow {
+  font-size: 1.6em;
+  line-height: 0;
+  font-weight: 900;
+  color: #fff;
+  background: var(--accent-color);
+  padding: 20px;
+  margin: 0;
+}
+
+.button-container button.slick-arrow:hover,
+.button-container button.slick-arrow:focus {
+  background: var(--dark-color);
+  outline: none;
+}
+
+/* carousel end */
+
+/* Trending Products */
+
+.product-tabs .nav-tabs {
+  justify-content: flex-end;
+  border: none;
+  margin-top:15px;
+  
+  --bs-nav-link-hover-color: #111;
+  --bs-nav-link-color: #555;
+  --bs-nav-tabs-link-border-color: #fff;
+  --bs-nav-tabs-link-hover-border-color: transparent;
+  --bs-nav-tabs-link-active-border-color: #fff;
+}
+.product-tabs .nav-tabs .nav-link.active, 
+.product-tabs .nav-tabs .nav-item.show .nav-link {
+  /* border: none; */
+  border-bottom: 3px solid var(--accent-color);
+}
+.product-tabs h3{
+  margin-top:15px;
+}
+/* product-grid */
+/* .product-grid {
+  gap: 25px;
+} */
+.product-item {
+  position: relative;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #FBFBFB;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  /* border-radius: 16px; */
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.product-item h3 {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+}
+.product-item figure {
+  background: #F9F9F9;
+  border-radius: 12px;
+  text-align: center;
+}
+.product-item figure img {
+  max-height: 210px;
+  height: auto;
+}
+.product-item .btn-wishlist {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  transition: all 0.3s ease-out;
+}
+.product-item .btn-wishlist:hover {
+  background: rgb(240, 56, 56);
+  color: #fff;
+}
+.product-item .qty {
+  font-weight:600;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #252525;
+}
+.product-item .rating {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .rating iconify-icon {
+  color: #FFC43F;
+}
+.product-item .price {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .product-qty {
+  width: 85px;
+}
+.product-item .btn-link {
+  text-decoration: none;
+}
+.product-item #quantity {
+  height: auto;
+  width: 28px;
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.product-item .btn-number {
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  color: #222;
+  padding: 0;
+}
+
+:root {
+  /* widths for rows and containers
+     */
+  --header-height: 120px;
+  --header-height-min: 80px;
+}
+
+/* This is custom strikethrough */
+.cross-trending {
+  position: relative;
+  display: inline-block;
+}
+.cross-trending::before, .cross-trending::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.cross-trending::before {
+  border-bottom: 2px solid red;
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+.cross-trending::after {
+  border-bottom: 2px solid red;
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+/* on mobile devices below 600px
+ */
+@media screen and (max-width: 600px) {
+  :root {
+    --header-height: 100px;
+    --header-height-min: 80px;
+  }
+}
+
+/* Theme Colors */
+:root {
+  --accent-color: #C5A992;
+  --dark-color: #2f2f2f;
+  --grey-color: #f1f1f1;
+  --body-text-color: #757575;
+  --light-text-color: #afafaf;
+  --dark-text-color: #2f2f2f;
+}
+
+/* Fonts */
+:root {
+  --body-font: "Roboto", sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
+/* Bootstrap */
+
+
+/* container fluid */
+.container-fluid {
+  /* width: 98%; */
+  max-width: 1800px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 2.5rem;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  --bs-dropdown-border-radius: 0;
+  --bs-dropdown-border-width: 0;
+}
+
+.dropdown-item {
+  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-item-padding-x: 1rem;
+  --bs-dropdown-link-color: var(--bs-black);
+  --bs-dropdown-item-border-radius: 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  --bs-dropdown-link-active-color: var(--bs-light);
+  --bs-dropdown-link-active-bg: var(--bs-black);
+}
+
+/* list group */
+.list-group-item {
+  --bs-list-group-item-padding-x: 0;
+  --bs-list-group-border-width: 0;
+}
+
+/* btn */
+.btn {
+  --bs-btn-border-radius: 0;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #8C907E;
+  --bs-btn-border-color: #8C907E;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5e624e;
+  --bs-btn-hover-border-color: #5e624e;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #5e624e;
+  --bs-btn-active-border-color: #5e624e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #8C907E;
+  --bs-btn-disabled-border-color: #8C907E;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-gradient: none;
+}
+
+.pagination {
+  --bs-pagination-active-bg: var(--bs-black);
+  --bs-pagination-border-width: 0;
+  --bs-pagination-border-radius: 0;
+}
+#buynow{
+  background-color:#8C907E;
+
+}
+#buynow:hover{
+  background-color:#C5A992;
+}
+/* breadcrumb */
+.breadcrumb {
+  --bs-breadcrumb-item-padding-x: 1em;
+}
+
+/* text white */
+.text-white {
+  --heading-color: var(--bs-light);
+  --bs-breadcrumb-item-active-color: var(--bs-light);
+  --bs-breadcrumb-divider-color: var(--bs-light);
+  --bs-link-color-rgb: var(--bs-light-rgb);
+  --bs-link-hover-color-rgb: var(--bs-light-rgb);
+}
+
+.text-white .nav-link {
+  --bs-nav-link-color: var(--bs-light);
+  --bs-nav-link-hover-color: var(--bs-light);
+  --bs-nav-link-active-color: var(--bs-light);
+  --bs-navbar-active-color: var(--bs-light);
+}
+
+/* accordion */
+.accordion {
+  --bs-accordion-active-color: var(--bs-dark);
+  --bs-accordion-active-bg: transparent; 
+}
+.accordion-button {
+  margin: 0;
+}
+
+/* form control */
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, .25);
+}
+
+/* dark theme */
+[data-bs-theme=dark] body {
+  color-scheme: dark;
+
+  --heading-color: #fff;
+  --bs-link-color: #fff;
+  --bs-link-hover-color: #fff;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color-rgb: 255, 255, 255;
+  --bs-body-color: #d1d1d1;
+  --bs-body-bg: #111;
+  --bs-body-bg-rgb: 17, 17, 41;
+}
+
+[data-bs-theme=dark] .dropdown-item {
+  --bs-dropdown-link-color: var(--bs-light);
+  --bs-dropdown-link-hover-color: var(--bs-white);
+}
+
+[data-bs-theme=dark] .bg-white,
+[data-bs-theme=dark] .bg-light {
+  --bs-bg-opacity: 0.1;
+}
+
+[data-bs-theme=dark] .btn-link,
+[data-bs-theme=dark] a {
+  --bs-link-color: #fff;
+  --bs-link-hover-color: #fff;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color-rgb: 255, 255, 255;
+}
+
+[data-bs-theme=dark] h1,
+[data-bs-theme=dark] h2,
+[data-bs-theme=dark] h3,
+[data-bs-theme=dark] h4,
+[data-bs-theme=dark] h5,
+[data-bs-theme=dark] h6 {
+  --heading-color: #fff;
+}
+
+/* end of Bootstrap Color Theme */
+/*----------------------------------------------*/
+/* 2 GENERAL TYPOGRAPHY */
+/*----------------------------------------------*/
+
+/* 2.1 General Styles
+/*----------------------------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.8;
+  color: #757575;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 5px;
+  outline: 0;
+}
+
+ul li.active a {
+  color: #daa556;
+}
+
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+dt,
+dd {
+  line-height: 1.42857143;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-shadow: none;
+}
+
+/* image align */
+figure.align-right {
+  margin: 30px 0 30px 30px;
+}
+
+/* Typography */
+/*----------------------------------------------*/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  /* color: var(--dark-color); */
+}
+
+h1.light,
+.h1,
+h2.light,
+.h2,
+h3.light,
+.h3,
+h4.light,
+.h4,
+h5.light,
+.h5,
+h6.light,
+.h6 {
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 25px;
+  text-transform: capitalize;
+}
+
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.4;
+}
+
+h2,
+.h2 {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+h3,
+.h3 {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+h4,
+.h4 {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+h5,
+.h5 {
+  font-size: .83em;
+  line-height: 1.25;
+}
+
+h6,
+.h6 {
+  font-size: .67em;
+  line-height: 1.1;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+p:empty {
+  display: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+mark {
+  background-color: #fcf8e3;
+  padding: 0.28rem;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+code,
+kbd,
+var {
+  font-size: 14px;
+}
+
+
+.navbar-custom img {
+  max-height: 100px; /* Increase the height limit */
+  height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+
+hr {
+ 
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+/*--------------------------------------------------------------
+/** 2.10 Buttons
+--------------------------------------------------------------*/
+a.btn,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"],
+button {
+  background-image: none;
+  background: var(--accent-color);
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.75em 1.5em;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  z-index: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* when clicked over the image */
+.my-5 {
+  margin-top: 7rem !important;
+  margin-bottom: 3rem !important;
+}
+/* Logo
+------------------------------------------------------------- */
+.main-logo {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding: 40px;
+  margin-right: 60px;
+  transition: 0.5s all ease-out;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-logo a {
+  font-family: "playfair display", Georgia, serif;
+  font-size: 5em;
+  color: #fff;
+  margin: 0 auto;
+  transition: 0.5s all ease-out;
+}
+
+.side-nav-bar {
+  position: absolute;
+  z-index: 10;
+}
+
+/* Header Menu
+--------------------------------------------------------------*/
+header .main-logo {
+  position: relative;
+}
+header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: var(--header-height);
+  transition: 0.3s all ease-out;
+}
+.nav-active header {
+  position: relative;
+}
+/* Add this to your CSS file (style.css) */
+.navbar-custom {
+  background-color: black; /* Set navbar background to black */
+  padding: 5px 15px; /* Adjust padding to reduce height */
+  height:90px;
+}
+
+.navbar-toggler-icon {
+  font-size: 28px; /* Increase hamburger icon size */
+  color: white;
+  padding-left:30px;
+}
+
+.navbar-custom img {
+  height: 40px; /* Reduce the logo height to make it more compact */
+}
+
+.navbar-custom a {
+  margin-left: 15px; /* Add space between icons */
+}
+
+.offcanvas {
+  background-color:black; /* Offcanvas background */
+}
+
+/* Custom aesthetic font styling for Menu */
+.aesthetic-font {
+  font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #333; /* Use a more appealing color */
+  text-transform: uppercase; /* Makes it more structured */
+  margin: 0;
+}
+
+
+
+
+
+

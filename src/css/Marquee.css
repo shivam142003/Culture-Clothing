@@ -1,0 +1,101 @@
+.company-container {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.company-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Marquee Container */
+.marquee-container {
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.marquee-item {
+  display: inline-flex;
+  animation: scrollLeft 20s linear infinite; /* Increased duration to slow down the scroll */
+  align-items: center; /* Centers images vertically */
+}
+
+/* Image Container */
+.image-container-apparel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 15vw; /* Set a consistent width for the image container */
+  max-width: 230px; /* Limit the maximum width */
+  min-width: 120px; /* Ensure the minimum size for larger screens */
+}
+
+/* Marquee Images */
+.marquee-item img {
+  width: 100%; /* Use 100% to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 20rem; /* Set a maximum height */
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title Styling */
+.image-title {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #fff; /* Improved visibility */
+}
+
+/* Continuous Scroll Animation */
+@keyframes scrollLeft {
+  0% {
+      transform: translateX(0); /* Start from the left */
+  }
+  100% {
+      transform: translateX(-53%); /* Move to the left */
+  }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .image-container-apparel {
+      width: 12vw; /* Adjust width for tablets */
+      max-width: 100px; /* Limit maximum size for tablets */
+      min-width: 80px; /* Ensure a minimum size */
+  }
+
+  .marquee-item img {
+      max-height: 10rem; /* Limit maximum height */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container-apparel {
+      width: 10vw; /* Further reduce size for smaller mobile devices */
+      max-width: 80px; /* Limit maximum size for mobile */
+      min-width: 60px; /* Ensure a minimum size */
+  }
+
+  .marquee-item img {
+      max-height: 8rem; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 375px) {
+  .image-container-apparel {
+      width: 8vw; /* For very small devices like iPhone XR */
+      max-width: 70px; /* Ensure proper size for iPhone XR */
+      min-width: 50px; /* Minimum size */
+  }
+
+  .marquee-item img {
+      max-height: 6rem; /* Maintain aspect ratio */
+  }
+}

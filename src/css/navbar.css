@@ -1,0 +1,80 @@
+/* src/OverlayNavbar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    transition: transform 0.3s ease; /* Add transition for button */
+    color: black;
+}
+
+.menu-button:hover {
+    transform: scale(1.1); /* Scale the button on hover */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Set initial opacity for fade effect */
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: opacity 0.5s ease, transform 1s ease; /* Add transition for opacity and transform */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    border-radius: 0 0 0 20px; /* Rounded corners on the left */
+}
+
+.overlay.active {
+    opacity: 1; /* Set opacity when active */
+    pointer-events: auto; /* Allow interaction when visible */
+    transform: translateX(0); /* Move to full screen */
+    background-color: #c5a992; /* Change background color */
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.overlay-content a {
+    display: block;
+    margin: 15px 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s; /* Transition for link color */
+}
+
+.overlay-content a:hover {
+    color: #5f5e5b; /* Change to your desired hover color */
+}
+
+.close {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: rgb(0, 0, 0);
+}
+
+/* Strikethrough effect on hover */
+.overlay-content a:hover {
+    text-decoration: line-through; /* Add strikethrough on hover */
+}
+

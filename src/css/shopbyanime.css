@@ -1,0 +1,71 @@
+/* Card hover transition */
+.anime-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    border: none;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px); /* Moves the card slightly upwards */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect on hover */
+}
+
+/* Title styling */
+.title-with-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; /* Position the title to the left */
+    color: black;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+/* Adding an arrow before the title */
+.title-with-arrow::before {
+    content: '→'; /* Add an arrow */
+    margin-right: 5px; /* Space between arrow and text */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the title and arrow */
+.anime-card:hover .title-with-arrow {
+    transform: translateX(10px); /* Move title slightly to the right on hover */
+}
+
+.anime-card:hover .title-with-arrow::before {
+    transform: translateX(5px); /* Move arrow to the right on hover */
+}
+
+/* Card image styling */
+.card-img-top {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.anime-card a {
+    background-color: #ffffff !important; /* Set background to white */
+    color: #000000 !important; /* Set text color to black */
+    border: none !important; /* Remove any border */
+    padding: 10px 20px; /* Adjust padding if needed */
+    text-align: center; /* Ensure the text is centered */
+    display: block;
+    width: 100%; /* Make sure it takes full width */
+    text-transform: none; /* Remove uppercase transformation if applied */
+    font-size: 16px; /* Adjust font size if needed */
+    font-weight: normal; /* Adjust font weight if needed */
+}
+
+/* Additional hover effect if you want */
+.btn-primary:hover {
+    background-color: #f0f0f0 !important; /* Slightly gray background on hover */
+    color: #000000 !important; /* Keep text black */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+

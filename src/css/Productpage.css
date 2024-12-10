@@ -1,0 +1,87 @@
+/* Productpage.css */
+.product-card{
+  margin-top:100px;
+}
+
+/* Centering the image container and enabling horizontal scroll */
+.image-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enables snapping to images */
+}
+
+.image-container img {
+  flex: 0 0 auto; /* Ensures the image does not shrink */
+  max-width: 100%; /* Ensures the image fits within the container */
+  margin-right: 10px; /* Adds space between images */
+  scroll-snap-align: center; /* Centers the image when scrolling */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 991px) {
+  .product-details, .action-buttons {
+    margin-top: 15px; /* Adds spacing when stacking */
+  }
+}
+
+/* css for styling image size for larger devices */
+/* Productpage.css */
+
+/* Styles for the image container */
+.image-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enables snapping to each image */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.image-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and other WebKit browsers */
+}
+
+/* Styles for each image */
+.image-container img {
+  flex: 0 0 auto; /* Prevents images from shrinking */
+  width: 100%; /* Makes the image take up full container width by default */
+  height: auto;
+  margin-right: 10px; /* Space between images */
+  scroll-snap-align: center; /* Centers each image when scrolling */
+}
+
+/* Adjust image size for larger screens (laptops and desktops) */
+@media (min-width: 992px) {
+  .image-container {
+    justify-content: center; /* Centers the image container */
+  }
+
+  .image-container img {
+    max-width: 300px; /* Reduce image size for laptop screens */
+    margin-right: 20px; /* Increase space between images */
+  }
+}
+
+/* Ensure the image container has a horizontal scroll */
+.image-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* On larger screens, maintain the layout structure */
+@media (min-width: 992px) {
+  .product-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-details, .action-buttons {
+    margin-top: 0; /* Align vertically */
+  }
+}
+
+
+
+
+/* ALL PRoducts CSS */
+

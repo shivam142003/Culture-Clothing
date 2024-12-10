@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Preloader container */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.tshirt-container {
+    position: relative;
+    width: 20vw; /* Responsive width */
+    max-width: 150px;
+    perspective: 1000px; /* Enable 3D effect */
+}
+
+/* Logo image */
+.tshirt {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    animation: tshirtFlipSequence 4s ease forwards;
+}
+
+/* Animation sequence for the logo */
+@keyframes tshirtFlipSequence {
+    0% {
+        transform: translateZ(-200px) rotateX(180deg) scale(0.5); /* Upside down, far away, and small */
+        opacity: 0;
+    }
+    50% {
+        transform: translateZ(0px) rotateX(180deg) scale(1.5); /* Closer, still upside down, zoomed in */
+        opacity: 1;
+    }
+    100% {
+        transform: translateZ(0px) rotateX(0deg) scale(1.5); /* Upright and maintaining the zoom size */
+        opacity: 1;
+    }
+}
+
+/* Brand Name Animation */
+.brand-name {
+    position: absolute;
+    bottom: 5%; /* Position at the bottom */
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    font-size: 5vw; /* Responsive font size */
+    font-family: monospace;
+    color: #fdfdfd;
+    animation: showBrandName 1s ease forwards 3s; /* Show brand name after flip */
+}
+
+@keyframes showBrandName {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

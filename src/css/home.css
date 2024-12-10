@@ -1,0 +1,11 @@
+
+
+.button-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.carousel {
+    height: 100%; /* Ensure it takes full height */
+}
