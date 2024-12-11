@@ -58,7 +58,7 @@ body {
     text-align: center;
     opacity: 0;
     font-size: 5vw; /* Responsive font size */
-    font-family: monospace;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fdfdfd;
     animation: showBrandName 1s ease forwards 3s; /* Show brand name after flip */
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/Preloader.css";
-import tshirt from "../images/justfound.png"; // Import the logo image
+import Culture from "../images/Culture.png"; // Import the logo image
 
 const Preloader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -18,9 +18,9 @@ const Preloader = () => {
   return (
     <div className="preloader">
       <div className="tshirt-container">
-        <img src={tshirt} alt="Just Found Culture" className="tshirt" />
+        <img src={Culture} alt="Just Found Culture" className="tshirt" />
       </div>
-      <div className="brand-name">Just Found Culture</div>
+      <div className="brand-name">Culture Clothing</div>
     </div>
   );
 };
