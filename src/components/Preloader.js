@@ -20,7 +20,7 @@ const Preloader = () => {
       <div className="tshirt-container">
         <img src={Culture} alt="Just Found Culture" className="tshirt" />
       </div>
-      <div className="brand-name">Culture Clothing</div>
+      <div className="brand-name">Culture  Clothing</div>
     </div>
   );
 };

@@ -126,7 +126,7 @@ const products = [
 ];
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://justfoundculture:Biggestbrand6070%24@cluster0.fvevo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://shivamrrs2019:Shiv138muskan@cluster0.lm1gk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

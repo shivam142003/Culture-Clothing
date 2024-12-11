@@ -9,9 +9,9 @@ const connectToMongo = async () => {
             socketTimeoutMS: 30000, // Increase timeout
             connectTimeoutMS: 30000 // Increase timeout
         });
-        // console.log("Connected to MongoDB Atlas");
+        console.log("Connected to MongoDB Atlas");
     } catch (error) {
-        // console.error("Error connecting to MongoDB:", error);
+        console.error("Error connecting to MongoDB:", error);
     }
 };
 
