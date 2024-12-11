@@ -1,23 +1,23 @@
 import React from 'react';
-import '../css/style.css';  
+import '../css/style.css';
 
 const Carousel = () => {
   // Dummy data for carousel items
   const carouselItems = [
     {
-      src: "https://i.pinimg.com/736x/96/67/2a/96672a648e05d177de4c0f8253104b4b.jpg",
+      src: "https://i.pinimg.com/736x/2a/99/bc/2a99bca2fa6ddc7ba2a6204b6b01a8c4.jpg",
       alt: "Image 1"
     },
     {
-      src: "https://cdn.hero.page/pfp/840e3a9e-e1cd-43ef-a03f-e43a2e86c7fe-gloom-and-brilliance-anime-pfp-in-dark-aesthetic-mood-2.png",
+      src: "https://img3.wallspic.com/previews/0/0/1/6/7/176100/176100-black_anime-anime_art-animated_cartoon-cartoon-sleeve-x750.jpg",
       alt: "Image 2"
     },
     {
-      src: "https://wallpapers-clan.com/wp-content/uploads/2022/10/dark-aesthetic-anime-pfp-1.jpg",
+      src: "https://e0.pxfuel.com/wallpapers/467/458/desktop-wallpaper-boy-in-dark-art-sleeve-black.jpg",
       alt: "Image 3"
     },
     {
-      src: "https://i.pinimg.com/236x/63/61/e0/6361e029d37355532fb94992b251ded5.jpg",
+      src: "https://e1.pxfuel.com/desktop-wallpaper/872/427/desktop-wallpaper-bad-vibes-smoking-by-sykonik-aesthetic-smokers.jpg",
       alt: "Image 4"
     }
   ];
@@ -26,13 +26,24 @@ const Carousel = () => {
     <section className="deepfakes-section d-flex align-items-center">
       <div className="container-fluid">
         <div className="row">
-        
-          <div className="col-12 image-column position-relative">
+          {/* Text Section */}
+          <div className="col-lg-6 d-flex flex-column justify-content-center align-items-start text-section">
+            <h2 className="my-5">Discover more on our website</h2>
+            <p className="mb-4">
+              Dive deeper into our culture, values, and offerings by exploring the sections of our website tailored to your interests.
+            </p>
+            <a href="/" className="btn btn-primary btn-lg">
+              Explore Now
+            </a>
+          </div>
+
+          {/* Carousel Section */}
+          <div className="col-lg-6 image-column position-relative">
             <div
               id="carouselExample"
               className="carousel slide"
-              data-bs-ride="carousel" 
-              data-bs-interval="2000" // Set the interval time to 2000 milliseconds (3 seconds)
+              data-bs-ride="carousel"
+              data-bs-interval="2000" // Set the interval time to 2000 milliseconds
             >
               <div className="carousel-inner">
                 {carouselItems.map((item, index) => (
