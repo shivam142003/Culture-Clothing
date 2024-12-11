@@ -20,7 +20,7 @@ export default function Login() {
   const handleLoginSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email: Email, password });
+      const response = await axios.post('https://culture-clothing.onrender.com/api/auth/login', { email: Email, password });
       // Handle the successful login response
       localStorage.setItem('user', JSON.stringify(response.data));
       const { auth_token } = response.data;

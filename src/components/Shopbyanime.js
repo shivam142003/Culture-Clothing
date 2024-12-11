@@ -9,14 +9,14 @@ export default function Shopbyanime() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get("https://culture-clothing.onrender.com/api/products");
 
         // Map product data and add full URL for the first image
         const updatedProducts = response.data.map((product) => ({
           ...product,
           image: product.images && product.images.length > 0
-            ? `http://localhost:5000${product.images[0]}`
-            : "http://localhost:5000/images/fallback.jpg", // Fallback image
+            ? `https://culture-clothing.onrender.com${product.images[0]}`
+            : "https://culture-clothing.onrender.com/images/fallback.jpg", // Fallback image
         }));
 
         setProducts(updatedProducts);

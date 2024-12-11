@@ -40,7 +40,7 @@ export default function Navbar() {
                 // console.log("Auth token:", authToken);
 
                 // Fetch backend cart data to compare
-                const backendResponse = await axios.get('http://localhost:5000/api/cart', {
+                const backendResponse = await axios.get('https://culture-clothing.onrender.com/api/cart', {
                     headers: {
                         'auth-token': authToken,
                     },
@@ -68,7 +68,7 @@ export default function Navbar() {
 
                 if (filteredCartData.length > 0) {
                     // Send only the new or updated items to the backend
-                    const response1 = await axios.patch('http://localhost:5000/api/cart', filteredCartData, {
+                    const response1 = await axios.patch('https://culture-clothing.onrender.com/api/cart', filteredCartData, {
                         headers: {
                             'Content-Type': 'application/json',
                             'auth-token': authToken,
@@ -86,7 +86,7 @@ export default function Navbar() {
             }
 
             // Proceed with the logout request to the backend
-            const response = await axios.post('http://localhost:5000/api/auth/logout');
+            const response = await axios.post('https://culture-clothing.onrender.com/api/auth/logout');
             if (response.status === 200) {
                 // Clear local storage and update login state
                 localStorage.removeItem('auth_token');

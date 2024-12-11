@@ -8,14 +8,14 @@ export default function Trendingproducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products/trending ");
+        const response = await axios.get("https://culture-clothing.onrender.com/api/products/trending ");
 
         // Map product data and add full URL for the first image
         const updatedProducts = response.data.map((product) => ({
           ...product,
           image: product.images && product.images.length > 0
-            ? `http://localhost:5000${product.images[1]}`
-            : "http://localhost:5000/images/fallback.jpg",  // Fallback image
+            ? `https://culture-clothing.onrender.com${product.images[1]}`
+            : "https://culture-clothing.onrender.com/images/fallback.jpg",  // Fallback image
         }));
 
         // console.log("Fetched products:", updatedProducts); // Debug log

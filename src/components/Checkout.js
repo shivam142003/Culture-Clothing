@@ -133,7 +133,7 @@
 //         weight: 0.24 * totalQuantity, // Set actual weight if needed
 //       };
 
-//       const response = await axios.post("http://localhost:5000/api/shiprocket-order", orderData);
+//       const response = await axios.post("https://culture-clothing.onrender.com/api/shiprocket-order", orderData);
 
 //       if (response.status === 200) {
 //         alert("Order placed successfully!");
@@ -400,7 +400,7 @@ const Checkout = () => {
       };
   
       // Call backend to create Razorpay order
-      const response = await axios.post("http://localhost:5000/api/create-order", orderData);
+      const response = await axios.post("https://culture-clothing.onrender.com/api/create-order", orderData);
   
       if (response.status === 200) {
         const { order_id, amount, currency } = response.data; // Destructure the response
@@ -456,7 +456,7 @@ const Checkout = () => {
   
             try {
               const shiprocketResponse = await axios.post(
-                "http://localhost:5000/api/shiprocket-order",
+                "https://culture-clothing.onrender.com/api/shiprocket-order",
                 shiprocketOrderData
               );
               if (shiprocketResponse.status === 200) {
@@ -530,7 +530,7 @@ const Checkout = () => {
           };
           if (paymentMethod === "COD") {
             try {
-              const response = await axios.post("http://localhost:5000/api/shiprocket-order", orderData);
+              const response = await axios.post("https://culture-clothing.onrender.com/api/shiprocket-order", orderData);
               if (response.status === 200) {
                 alert("Order placed successfully!");
                 navigate("/OrderSuccess", { state: { orderDetails: response.data } });

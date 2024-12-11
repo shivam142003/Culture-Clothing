@@ -20,7 +20,7 @@ export default function Signup() {
         event.preventDefault();
         try {
             // console.log('Sending request with:', { Email, password });
-            const response = await axios.post('http://localhost:5000/api/auth/signup', { email: Email, password });
+            const response = await axios.post('https://culture-clothing.onrender.com/api/auth/signup', { email: Email, password });
             // console.log('Response:', response);
             if(response.status==200)
             {

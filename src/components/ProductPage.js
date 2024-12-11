@@ -26,7 +26,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/products/${productId}`);
+        const response = await axios.get(`https://culture-clothing.onrender.com/api/products/${productId}`);
         setProduct(response.data);
         // console.log(response.data);
       } catch (error) {
@@ -196,7 +196,7 @@ const ProductPage = () => {
               {product.images && product.images.map((image, index) => (
                 <img
                   key={index}
-                  src={`http://localhost:5000${image}`}
+                  src={`https://culture-clothing.onrender.com${image}`}
                   className="img-fluid mb-2"
                   alt={product.title}
                   style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}

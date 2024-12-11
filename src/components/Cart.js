@@ -22,7 +22,7 @@ const Cart = () => {
   const fetchCartData = async () => {
     const authToken = localStorage.getItem("auth_token");
     try {
-      const response = await axios.get('http://localhost:5000/api/cart', {
+      const response = await axios.get('https://culture-clothing.onrender.com/api/cart', {
         headers: { 'auth-token': authToken },
       });
 
@@ -77,7 +77,7 @@ const Cart = () => {
     try {
       // Remove from backend
       if (isLoggedIn) {
-        await axios.delete(`http://localhost:5000/api/cart/${itemToRemove.productId}/${itemToRemove.size}`, {
+        await axios.delete(`https://culture-clothing.onrender.com/api/cart/${itemToRemove.productId}/${itemToRemove.size}`, {
           headers: { 'auth-token': authToken },
         });
       }

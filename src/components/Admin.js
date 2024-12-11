@@ -20,7 +20,7 @@ export default function Admin() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get("https://culture-clothing.onrender.com/api/products");
         setProducts(response.data); // Set the fetched products in the state
         localStorage.setItem('products', JSON.stringify(response.data)); // Store products in localStorage
       } catch (error) {
@@ -87,7 +87,7 @@ export default function Admin() {
     });
 
     try {
-      const response = await axios.post("http://localhost:5000/api/products/addproduct", formData, {
+      const response = await axios.post("https://culture-clothing.onrender.com/api/products/addproduct", formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setProducts([...products, response.data]); // Add the new product to the list
@@ -110,7 +110,7 @@ export default function Admin() {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/products/${productId}`);
+      await axios.delete(`https://culture-clothing.onrender.com/api/products/${productId}`);
       setProducts(products.filter(product => product._id !== productId)); // Remove deleted product from state
       alert('Product deleted successfully!');
     } catch (error) {
@@ -163,7 +163,7 @@ export default function Admin() {
     try {
       // Send PUT request to update the product by its ID
       const response = await axios.put(
-        `http://localhost:5000/api/products/${editProduct._id}`,
+        `https://culture-clothing.onrender.com/api/products/${editProduct._id}`,
         editProduct
       );
 
@@ -318,7 +318,7 @@ export default function Admin() {
                       <td>
                         {product.images.length > 0 && (
                           <img
-                            src={`http://localhost:5000${product.images[0]}`} // Display the first image
+                            src={`https://culture-clothing.onrender.com${product.images[0]}`} // Display the first image
                             alt={`product-image`}
                             style={{ width: '100px', height: '100px', margin: '5px' }}
                           />
@@ -358,7 +358,7 @@ export default function Admin() {
                       <td>
                         {product.images.length > 0 && (
                           <img
-                            src={`http://localhost:5000${product.images[0]}`} // Display the first image
+                            src={`https://culture-clothing.onrender.com${product.images[0]}`} // Display the first image
                             alt={`product-image`}
                             style={{ width: '100px', height: '100px', margin: '5px' }}
                           />
