@@ -28,3 +28,84 @@
   margin-bottom: 15px; /* Added extra space after the title */
   font-size: 18px; /* Adjusted size for better readability */
 }
+
+
+/* Section Styling */
+.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+}
+
+.carousel-head {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.carousel-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.carousel-button {
+  font-size: 1.1rem;
+  padding: 10px 30px;
+}
+
+.image-column {
+  position: relative;
+  height: 100vh;
+}
+
+/* Carousel specific styling */
+.carousel-inner img {
+  max-height: 100vh; /* Full screen */
+  object-fit: cover; /* Maintain aspect ratio and fill the space */
+}
+
+/* Carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #ffffff;
+}
+
+/* Make the carousel responsive */
+@media (max-width: 991px) {
+  .carousel-head {
+    font-size: 2rem;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-section {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .image-column {
+    height: auto; /* Let image scale down on smaller screens */
+  }
+}

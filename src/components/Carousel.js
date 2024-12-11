@@ -1,8 +1,7 @@
 import React from 'react';
-import '../css/style.css';
+import '../css/About.css';
 
 const Carousel = () => {
-  // Dummy data for carousel items
   const carouselItems = [
     {
       src: "https://i.pinimg.com/736x/2a/99/bc/2a99bca2fa6ddc7ba2a6204b6b01a8c4.jpg",
@@ -23,27 +22,27 @@ const Carousel = () => {
   ];
 
   return (
-    <section className="deepfakes-section d-flex align-items-center">
+    <section className="carousel-section">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row align-items-center">
           {/* Text Section */}
-          <div className="col-lg-6 d-flex flex-column justify-content-center align-items-start text-section">
-            <h2 className="my-5">Discover more on our website</h2>
-            <p className="mb-4">
+          <div className="col-lg-6 col-md-6 text-section">
+            <h2 className="carousel-head">Discover more on our website</h2>
+            <p className="carousel-text">
               Dive deeper into our culture, values, and offerings by exploring the sections of our website tailored to your interests.
             </p>
-            <a href="/" className="btn btn-primary btn-lg">
+            <a href="/" className="btn btn-primary btn-lg carousel-button">
               Explore Now
             </a>
           </div>
 
           {/* Carousel Section */}
-          <div className="col-lg-6 image-column position-relative">
+          <div className="col-lg-6 col-md-6 image-column">
             <div
               id="carouselExample"
               className="carousel slide"
               data-bs-ride="carousel"
-              data-bs-interval="2000" // Set the interval time to 2000 milliseconds
+              data-bs-interval="2000"
             >
               <div className="carousel-inner">
                 {carouselItems.map((item, index) => (
@@ -55,33 +54,37 @@ const Carousel = () => {
                       src={item.src}
                       className="d-block w-100"
                       alt={item.alt}
-                      style={{ maxHeight: '100vh', objectFit: 'cover' }} // Adjusted maxHeight for full-screen effect
+                      style={{ maxHeight: '100vh', objectFit: 'cover' }}
                     />
                   </div>
                 ))}
               </div>
 
               {/* Carousel Controls */}
-              <div className="button-container d-flex justify-content-between align-items-center">
-                <button
-                  className="prev slick-arrow"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="prev"
-                  aria-label="Previous slide"
-                >
-                  <i className="fas fa-angle-left"></i>
-                </button>
-                <button
-                  className="next slick-arrow"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="next"
-                  aria-label="Next slide"
-                >
-                  <i className="fas fa-angle-right"></i>
-                </button>
-              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
