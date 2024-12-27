@@ -82,7 +82,7 @@ export default function Trendingproducts() {
                         <div className="col" key={product.productId}>
 
                           <div className="product-item text-center" style={{ background: 'none', border: 'none', margin: '0px' }}>
-                            <figure className="m-0 p-0" style={{ height: '400px', overflow: 'hidden' }}>
+                            <figure className="m-0 p-0">
                               <Link
                                 to={`/product/${product.productId}`}
                                 title={product.title}
@@ -92,19 +92,13 @@ export default function Trendingproducts() {
                                   className="tab-image img-fluid"
                                   loading="lazy"
                                   alt={product.title}
-                                  style={{
-                                    height: '100%',
-                                    width: '100%',
-                                    objectFit: 'cover', // Ensures the image fills the container proportionally
-                                    objectPosition: 'center', // Centers the image within the container
-                                  }}
+                                  style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
                                 />
-                                <span className="position-absolute top-10 translate-middle badge rounded-pill bg-danger">
-                                  {product.discount > 0 ? `- ${product.discount}%` : ''}
-                                </span>
+                                <span class="position-absolute top-10 translate-middle badge rounded-pill bg-danger">{product.discount > 0 ? `- ${product.discount}%` : ''}</span>
                               </Link>
-                            </figure>
 
+
+                            </figure>
                             <div className="d-flex flex-column align-items-start mt-1">
                               <div className="d-flex justify-content-between align-items-center w-100">
                                 <p
