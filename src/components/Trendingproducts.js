@@ -172,7 +172,7 @@ export default function Trendingproducts() {
                         </div>
                       ))
                     ) : (
-                      <p>No products available</p>
+                      <p>products Loading...</p>
                     )}
                   </div>
                 </div>
