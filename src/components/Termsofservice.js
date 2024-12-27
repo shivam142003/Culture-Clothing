@@ -10,7 +10,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">1. Acceptance of Terms</h3>
       <p>
-        By accessing or using the Cultural Clothing Exchanges Portal ("Website"), you agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree with these Terms, you must not use the Website or purchase products from us. 
+        By accessing or using the Culture Clothing Exchanges Portal ("Website"), you agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree with these Terms, you must not use the Website or purchase products from us. 
       </p>
       <p>
         These Terms are subject to change at any time, and the changes will be posted on this page. Please check periodically for updates. Your continued use of the Website after any changes will constitute your acceptance of such changes.
@@ -29,7 +29,7 @@ const TermsOfService = () => {
         To access certain features of the Website, you may need to register an account. When registering, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account information and are fully responsible for all activities that occur under your account.
       </p>
       <p>
-        If you suspect any unauthorized use of your account, you must notify us immediately at <a href="mailto:ordersupport@culturalclothing.com">ordersupport@culturalclothing.com</a>.
+        If you suspect any unauthorized use of your account, you must notify us immediately at <a href="mailto:ordersupport@Cultureclothing.com">ordersupport@Cultureclothing.com</a>.
       </p>
 
       <h3 className="return-title">4. Product Information and Availability</h3>
@@ -58,7 +58,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">7. Limitation of Liability</h3>
       <p>
-        To the fullest extent permitted by law, Cultural Clothing shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of the Website, including the purchase of products. This includes damages for loss of data, loss of profit, or business interruption.
+        To the fullest extent permitted by law, Culture Clothing shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of the Website, including the purchase of products. This includes damages for loss of data, loss of profit, or business interruption.
       </p>
       <p>
         Our total liability for any claims, losses, or damages shall not exceed the amount you paid for the product or service that gave rise to the claim.
@@ -66,7 +66,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">8. Indemnification</h3>
       <p>
-        You agree to indemnify and hold harmless Cultural Clothing, its affiliates, employees, agents, and third-party providers from any claims, losses, liabilities, damages, and expenses (including legal fees) arising from your use of the Website or your violation of these Terms.
+        You agree to indemnify and hold harmless Culture Clothing, its affiliates, employees, agents, and third-party providers from any claims, losses, liabilities, damages, and expenses (including legal fees) arising from your use of the Website or your violation of these Terms.
       </p>
 
       <h3 className="return-title">9. Termination</h3>
