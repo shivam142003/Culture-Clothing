@@ -56,7 +56,7 @@ export default function Shopbyanime() {
                 </div>
               ))
             ) : (
-              <p className="text-center" style={{ color: "white" }}>No products available</p>
+              <p className="text-center" style={{ color: "white" }}>products Loading...</p>
             )}
           </div>
         </div>
