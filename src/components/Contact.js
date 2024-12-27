@@ -7,8 +7,8 @@ export default function Contact() {
       <div className="contact-box">
         <h1>&bull; Contact Us &bull;</h1>
         <div className="contact-underline"></div>
-        <p>Mail us at : <a href="mailto:example@example.com">example@example.com</a></p>
-        <p> Instagram us at : <a href="https://www.instagram.com/justfoundculture/" target="_blank" rel="noopener noreferrer">justfoundculture</a></p>
+        <p>Mail us at : <a href="mailto:example@example.com">Cultureclothing@example.com</a></p>
+        <p> Instagram us at : <a href="" target="_blank" rel="noopener noreferrer">culture clothing</a></p>
         <p>Call us at : <a href="tel:+1234567890">987654321</a></p>
       </div>
     </div>

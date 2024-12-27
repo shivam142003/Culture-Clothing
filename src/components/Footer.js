@@ -45,7 +45,7 @@ const Footer = () => {
     <div className="row">
       <div className="col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center align-items-center text-center">
         <ul className="social-icons ">
-          <li><a className="instagram" target='blank' href="https://www.instagram.com/justfoundculture/"><i className='fab fa-instagram'></i></a></li>
+          <li><a className="instagram" target='blank' href=""><i className='fab fa-instagram'></i></a></li>
         </ul>
       </div>
       <div className="col-md-8 col-sm-6 col-xs-12 text-center">
