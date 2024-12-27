@@ -82,7 +82,7 @@ export default function Trendingproducts() {
                         <div className="col" key={product.productId}>
 
                           <div className="product-item text-center" style={{ background: 'none', border: 'none', margin: '0px' }}>
-                            <figure className="m-0 p-0">
+                              <figure className="m-0 p-0">
                               <Link
                                 to={`/product/${product.productId}`}
                                 title={product.title}
@@ -96,7 +96,6 @@ export default function Trendingproducts() {
                                 />
                                 <span class="position-absolute top-10 translate-middle badge rounded-pill bg-danger">{product.discount > 0 ? `- ${product.discount}%` : ''}</span>
                               </Link>
-
 
                             </figure>
                             <div className="d-flex flex-column align-items-start mt-1">
