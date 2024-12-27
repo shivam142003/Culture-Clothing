@@ -10,7 +10,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">1. Acceptance of Terms</h3>
       <p>
-        By accessing or using the Found Culture Exchanges Portal ("Website"), you agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree with these Terms, you must not use the Website or purchase products from us. 
+        By accessing or using the Cultural Clothing Exchanges Portal ("Website"), you agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree with these Terms, you must not use the Website or purchase products from us. 
       </p>
       <p>
         These Terms are subject to change at any time, and the changes will be posted on this page. Please check periodically for updates. Your continued use of the Website after any changes will constitute your acceptance of such changes.
@@ -29,7 +29,7 @@ const TermsOfService = () => {
         To access certain features of the Website, you may need to register an account. When registering, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account information and are fully responsible for all activities that occur under your account.
       </p>
       <p>
-        If you suspect any unauthorized use of your account, you must notify us immediately at <a href="mailto:ordersupport@foundculture.com">ordersupport@foundculture.com</a>.
+        If you suspect any unauthorized use of your account, you must notify us immediately at <a href="mailto:ordersupport@culturalclothing.com">ordersupport@culturalclothing.com</a>.
       </p>
 
       <h3 className="return-title">4. Product Information and Availability</h3>
@@ -58,7 +58,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">7. Limitation of Liability</h3>
       <p>
-        To the fullest extent permitted by law, Found Culture shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of the Website, including the purchase of products. This includes damages for loss of data, loss of profit, or business interruption.
+        To the fullest extent permitted by law, Cultural Clothing shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of the Website, including the purchase of products. This includes damages for loss of data, loss of profit, or business interruption.
       </p>
       <p>
         Our total liability for any claims, losses, or damages shall not exceed the amount you paid for the product or service that gave rise to the claim.
@@ -66,7 +66,7 @@ const TermsOfService = () => {
 
       <h3 className="return-title">8. Indemnification</h3>
       <p>
-        You agree to indemnify and hold harmless Found Culture, its affiliates, employees, agents, and third-party providers from any claims, losses, liabilities, damages, and expenses (including legal fees) arising from your use of the Website or your violation of these Terms.
+        You agree to indemnify and hold harmless Cultural Clothing, its affiliates, employees, agents, and third-party providers from any claims, losses, liabilities, damages, and expenses (including legal fees) arising from your use of the Website or your violation of these Terms.
       </p>
 
       <h3 className="return-title">9. Termination</h3>
@@ -77,27 +77,11 @@ const TermsOfService = () => {
         Upon termination, you must immediately cease using the Website and any products or services obtained through it.
       </p>
 
-      <h3 className="return-title">10. Privacy Policy</h3>
-      <p>
-        Your use of the Website is governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. Please read our Privacy Policy carefully to understand our practices regarding your personal data.
-      </p>
 
-      <h3 className="return-title">11. Governing Law</h3>
-      <p>
-        These Terms will be governed by and construed in accordance with the laws of [insert jurisdiction], without regard to its conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts located in [insert location], for any legal actions or proceedings arising under these Terms.
-      </p>
-
-      <h3 className="return-title">12. Changes to Terms</h3>
-      <p>
-        We reserve the right to modify or update these Terms at any time. Any changes will be posted on this page, and the "Effective Date" will be updated accordingly. By continuing to use the Website after such changes are made, you accept and agree to the updated Terms.
-      </p>
-
-      <h3 className="return-title">13. Contact Information</h3>
-      <p>If you have any questions or concerns about these Terms, please contact our customer support team:</p>
-      <p>Call: <strong className="bold-text">+91 8448441388</strong></p>
-      <p>Email: <a href="mailto:ordersupport@foundculture.com" style={{ backgroundColor: 'whitesmoke', padding: '6px' }}>ordersupport@foundculture.com</a></p>
+     
     </div>
   );
 };
 
 export default TermsOfService;
+
