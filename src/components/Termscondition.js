@@ -26,7 +26,7 @@ export default function TermsAndServicesAccordion() {
                         data-bs-parent="#termsAccordion"
                     >
                         <div className="accordion-body">
-                            <p>By using our services, you agree to these terms and conditions of Cultural Clothing.</p>
+                            <p>By using our services, you agree to these terms and conditions of Culture Clothing.</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function TermsAndServicesAccordion() {
                         data-bs-parent="#termsAccordion"
                     >
                         <div className="accordion-body">
-                            <p>You are responsible for your account and any activity that occurs under your account on the Cultural Clothing Website.</p>
+                            <p>You are responsible for your account and any activity that occurs under your account on the Culture Clothing Website.</p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ export default function TermsAndServicesAccordion() {
                         data-bs-parent="#termsAccordion"
                     >
                         <div className="accordion-body">
-                            <p>You agree not to engage in any prohibited activities, including but not limited to fraud, abuse, or harassment related to Cultural Clothing.</p>
+                            <p>You agree not to engage in any prohibited activities, including but not limited to fraud, abuse, or harassment related to Culture Clothing.</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ export default function TermsAndServicesAccordion() {
                         data-bs-parent="#termsAccordion"
                     >
                         <div className="accordion-body">
-                            <p>Cultural Clothing reserves the right to terminate your access to our services at our sole discretion.</p>
+                            <p>Culture Clothing reserves the right to terminate your access to our services at our sole discretion.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ export default function TermsAndServicesAccordion() {
                         data-bs-parent="#termsAccordion"
                     >
                         <div className="accordion-body">
-                            <p>Our services are provided "as is" without warranty of any kind, by Cultural Clothing.</p>
+                            <p>Our services are provided "as is" without warranty of any kind, by Culture Clothing.</p>
                         </div>
                     </div>
                 </div>
