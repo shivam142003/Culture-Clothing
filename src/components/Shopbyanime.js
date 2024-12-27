@@ -44,7 +44,7 @@ export default function Shopbyanime() {
                       src={product.image}
                       className="card-img-top"
                       alt={product.title}
-                      style={{ objectFit: "contain", width: "100%", height: "200px" }}
+                      style={{ objectFit: "cover", width: "100%", height: "200px" }}
                     />
                     <Link
                       to={`/product/${product.productId}`}

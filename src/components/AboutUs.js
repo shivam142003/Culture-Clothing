@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/About.css';
-import tshirt3_1 from "../images/tshirt3(1).jpg";
+import kisen from "../images/shopbyanime/kisen.jpg";
 
 export default function AboutUs() {
   return (
@@ -8,7 +8,7 @@ export default function AboutUs() {
       <div className="row align-items-center">
         {/* Image on the left */}
         <div className="col-md-4">
-          <img src={tshirt3_1} alt="Found Culture" className="about-image img-fluid rounded" />
+          <img src={kisen} alt="Found Culture" className="about-image img-fluid rounded" />
         </div>
 
         {/* Content on the right */}
