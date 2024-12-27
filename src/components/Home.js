@@ -12,7 +12,7 @@ export default function Home() {
                     <Carousel/>
                     <Trendingproducts/>
                     <Shopbyanime />
-                    {/* <Marquee/> */}
+                    <Marquee/>
                    
                 </div>
                
