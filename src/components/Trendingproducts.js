@@ -82,28 +82,34 @@ export default function Trendingproducts() {
                         <div className="col" key={product.productId}>
 
                           <div className="product-item text-center" style={{ background: 'none', border: 'none', margin: '0px' }}>
-                            <figure className="m-0 p-0" style={{ height: '400px', overflow: 'hidden' }}>
-                              <Link
-                                to={`/product/${product.productId}`}
-                                title={product.title}
-                              >
-                                <img
-                                  src={product.image}
-                                  className="tab-image img-fluid"
-                                  loading="lazy"
-                                  alt={product.title}
-                                  style={{
-                                    height: '100%',
-                                    width: '100%',
-                                    objectFit: 'cover', // Ensures the image fills the container proportionally
-                                    objectPosition: 'center', // Centers the image within the container
-                                  }}
-                                />
-                                <span className="position-absolute top-10 translate-middle badge rounded-pill bg-danger">
-                                  {product.discount > 0 ? `- ${product.discount}%` : ''}
-                                </span>
-                              </Link>
-                            </figure>
+                           <figure
+  className="m-0 p-0"
+  style={{
+    height: '400px',
+    overflow: 'hidden',
+    margin: '0', // Remove default margin
+    padding: '0', // Remove default padding
+  }}
+>
+  <Link to={`/product/${product.productId}`} title={product.title}>
+    <img
+      src={product.image}
+      className="tab-image img-fluid"
+      loading="lazy"
+      alt={product.title}
+      style={{
+        height: '100%',
+        width: '100%',
+        objectFit: 'cover', // Ensures no white space
+        objectPosition: 'center',
+      }}
+    />
+    <span className="position-absolute top-10 translate-middle badge rounded-pill bg-danger">
+      {product.discount > 0 ? `- ${product.discount}%` : ''}
+    </span>
+  </Link>
+</figure>
+
 
                             <div className="d-flex flex-column align-items-start mt-1">
                               <div className="d-flex justify-content-between align-items-center w-100">
