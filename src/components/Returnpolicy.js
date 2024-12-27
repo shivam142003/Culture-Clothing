@@ -10,7 +10,7 @@ export default function ReturnPolicy() {
 
         <h3 className="return-title">Applicability of Policy</h3>
         <p>
-          By using the Cultural Clothing Exchanges Portal and/or initiating a request for the purchase of products on the portal, you agree to the terms contained in this policy without modification. If you do not agree to these terms, we advise you not to transact on culturalclothing.com.
+          By using the Culture Clothing Exchanges Portal and/or initiating a request for the purchase of products on the portal, you agree to the terms contained in this policy without modification. If you do not agree to these terms, we advise you not to transact on Cultureclothing.com.
         </p>
         <p>
           Please note that we may change the terms of this policy from time to time. Every time you wish to use the portal, please check the policy to ensure you understand the terms and conditions that apply.
@@ -38,7 +38,7 @@ export default function ReturnPolicy() {
           Please return your product(s) in the same condition as they were shipped. If the products are returned in poor condition or have clearly been worn, we will not process your request.
         </p>
         <p>
-          If you encounter any issues, please email us with your name and order ID at <a href="mailto:ordersupport@culturalclothing.com">ordersupport@culturalclothing.com</a>. Our support team is available Monday to Saturday, from <strong className="bold-text">11:00 AM - 7:00 PM</strong>. All pending queries will be prioritized and resolved within <strong className="bold-text">24 hours</strong>.
+          If you encounter any issues, please email us with your name and order ID at <a href="mailto:ordersupport@Cultureclothing.com">ordersupport@Cultureclothing.com</a>. Our support team is available Monday to Saturday, from <strong className="bold-text">11:00 AM - 7:00 PM</strong>. All pending queries will be prioritized and resolved within <strong className="bold-text">24 hours</strong>.
         </p>
         <p>
           <strong className="bold-text">Cancellations</strong>: Cancellation of orders is only permitted for Cash on Delivery (COD) orders before dispatch. All prepaid orders are final; we do not offer cancellations or refunds. Any refunds are issued as store credit equivalent to the selling/MRP amount, valid for <strong className="bold-text">three months</strong>. Store credits are non-refundable and redeemable only at our offline and online stores. Shipping charges are non-refundable.
