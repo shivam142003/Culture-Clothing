@@ -14,7 +14,7 @@ export default function AboutUs() {
         {/* Content on the right */}
         <div className="col-md-8">
           <div className="about-content">
-            <h2 className='about-title'>About Found Culture</h2>
+            <h2 className='about-title'>About Culture clothing</h2>
             <p>
               Culture Clothing is a premium lifestyle and streetwear brand dedicated to celebrating individuality, creativity, and authenticity. Founded in [Year] by [Founder's Name(s)], 
               our brand merges contemporary fashion with the raw essence of street culture, making a bold statement in the fashion industry.
